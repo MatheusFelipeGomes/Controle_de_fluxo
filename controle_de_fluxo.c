@@ -313,7 +313,6 @@ int main() {
        
         // Envia dados para o ThingSpeak com uso do time ( para não travar as condições anteriores)
         enviar_se_necessario();
-        sleep_ms(200000);
         
         atualizar_display(); // Atualiza o display
 

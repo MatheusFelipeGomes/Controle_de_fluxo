@@ -7,6 +7,6 @@
 
 // Configurações do ThingSpeak
 #define THINGSPEAK_API_KEY "5NKQGW5NS0SE1C9W"  // API Key do ThingSpeak
-#define THINGSPEAK_URL "https://api.thingspeak.com/update?api_key=5NKQGW5NS0SE1C9W&field1=0"    // URL do ThingSpeak
+#define THINGSPEAK_URL "api.thingspeak.com"    // URL do ThingSpeak
 
 #endif // CONFIG_H

@@ -71,7 +71,7 @@ void enviar_dados_thingspeak(int num_pessoas) {
     char request[256];
     snprintf(request, sizeof(request), "GET /update?api_key=%s&field1=%d HTTP/1.1\r\nHost: %s\r\n\r\n", 
              get_thingspeak_api_key(), num_pessoas, get_thingspeak_url()); // Use o domínio sem 'http://'
-
+    printf("Request: %s", request);
     // Envia a requisição HTTP
     err_t err = tcp_write(pcb, request, strlen(request), TCP_WRITE_FLAG_COPY);
     if (err != ERR_OK) {
